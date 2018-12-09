@@ -1,0 +1,197 @@
+.unhighlightable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+dialogbox {
+    position: fixed;
+    z-index: 1;
+    left: calc(50% - 250px);
+    top: calc(30% - 200px);
+    display: block;
+    width: 500px;
+    border-top: 6px solid #1f385e;
+    border-bottom: 1px solid #1f385e;
+    z-index: 5;
+    margin: 50px auto
+}
+
+dialogbox dboxbody,dialogbox dboxfooter,dialogbox dboxheader {
+    border-left: 1px solid #1f385e;
+    border-right: 1px solid #1f385e
+}
+
+dialogbox dboxheader {
+    display: block;
+    padding: 2px 10px;
+    border-bottom: 1px solid #1f385e;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-style: italic;
+    text-align: left
+}
+
+dialogbox dboxbody {
+    display: block;
+    height: 400px;
+    padding: 2px 10px;
+    background-color: #fff;
+    overflow-y: auto
+}
+
+dialogbox dboxnotif {
+    display: block;
+    background-color: #fff;
+    overflow-y: auto
+}
+
+dialogbox dboxnotif.closed {
+    transition: height .5s;
+    height: 0
+}
+
+dialogbox dboxnotif.opened {
+    transition: height .5s;
+    padding: 2px 10px;
+    height: 50px
+}
+
+dialogbox dboxnotif.info {
+    color: #00f
+}
+
+dialogbox dboxnotif.error {
+    color: red
+}
+
+dialogbox dboxnotif.warn {
+    color: orange
+}
+
+dialogbox dboxfooter {
+    display: flex;
+    display: -webkit-flex;
+    border-top: 1px solid #1f385e;
+    color: #25549e
+}
+
+dialogbox dboxfooter trigger {
+    display: block;
+    flex: 1;
+    padding: 2px 0;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 700;
+    background-color: #fff;
+    text-transform: uppercase
+}
+
+dialogbox dboxfooter trigger:not(:first-child) {
+    border-left: 1px solid #1f385e
+}
+
+dialogbox dboxheader {
+    background-color: #e9edf3;
+    color: #1f385e;
+    position: relative
+}
+
+dialogbox dboxheader logo {
+    display: block;
+    height: 100%;
+    width: 50px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-left: 1px solid #757575;
+    background: #f2f6f8;
+    background: -webkit-linear-gradient(to bottom,#f2f6f8 0,#d8e1e7 50%,#b5c6d0 51%,#e0eff9 100%);
+    background: -o-linear-gradient(to bottom,#f2f6f8 0,#d8e1e7 50%,#b5c6d0 51%,#e0eff9 100%);
+    background: linear-gradient(to bottom,#f2f6f8 0,#d8e1e7 50%,#b5c6d0 51%,#e0eff9 100%)
+}
+
+dialogbox dboxheader logo:hover {
+    background: #ebf1f6;
+    background: -webkit-linear-gradient(to bottom,#ebf1f6 0,#abd3ee 50%,#89c3eb 51%,#d5ebfb 100%);
+    background: -o-linear-gradient(to bottom,#ebf1f6 0,#abd3ee 50%,#89c3eb 51%,#d5ebfb 100%);
+    background: linear-gradient(to bottom,#ebf1f6 0,#abd3ee 50%,#89c3eb 51%,#d5ebfb 100%)
+}
+
+dialogbox dboxbody {
+    background-image: linear-gradient(top,#c8cbd2,#f2f2f2);
+    background-image: -o-linear-gradient(top,#c8cbd2,#f2f2f2);
+    background-image: -moz-linear-gradient(top,#c8cbd2,#f2f2f2);
+    background-image: -webkit-linear-gradient(top,#c8cbd2,#f2f2f2);
+    font-style: italic;
+    font-size: 1.025rem
+}
+
+dialogbox dboxbody p {
+    text-indent: 20px;
+    text-align: justify;
+    padding: 10px 15px
+}
+
+dialogbox dboxbody ul li {
+    margin-left: 75px
+}
+
+dialogbox dboxnotif {
+    background: #e9edf3;
+    font-weight: 700;
+    color: #25549e
+}
+
+dialogbox dboxnotif.opened {
+    border-width: 1px 1px 0;
+    border-color: #1f385e;
+    border-style: solid
+}
+
+dialogbox dboxnotif.error {
+    color: #1f385e;
+    background-color: #e96666
+}
+
+dialogbox dboxfooter trigger {
+    background: #f2f6f8;
+    background: -webkit-linear-gradient(to bottom,#f2f6f8 0,#d8e1e7 50%,#b5c6d0 51%,#e0eff9 100%);
+    background: -o-linear-gradient(to bottom,#f2f6f8 0,#d8e1e7 50%,#b5c6d0 51%,#e0eff9 100%);
+    background: linear-gradient(to bottom,#f2f6f8 0,#d8e1e7 50%,#b5c6d0 51%,#e0eff9 100%)
+}
+
+dialogbox dboxfooter trigger:hover {
+    background: #ebf1f6;
+    background: -webkit-linear-gradient(to bottom,#ebf1f6 0,#abd3ee 50%,#89c3eb 51%,#d5ebfb 100%);
+    background: -o-linear-gradient(to bottom,#ebf1f6 0,#abd3ee 50%,#89c3eb 51%,#d5ebfb 100%);
+    background: linear-gradient(to bottom,#ebf1f6 0,#abd3ee 50%,#89c3eb 51%,#d5ebfb 100%)
+}
+
+dialogbox dboxfooter trigger:active {
+    background: #eef6ea;
+    background: -webkit-linear-gradient(to bottom,#eef6ea 0,#c2eeaa 50%,#aaeb88 51%,#e0fbd3 100%);
+    background: -o-linear-gradient(to bottom,#eef6ea 0,#c2eeaa 50%,#aaeb88 51%,#e0fbd3 100%);
+    background: linear-gradient(to bottom,#eef6ea 0,#c2eeaa 50%,#aaeb88 51%,#e0fbd3 100%)
+}
+
+dialogbox dboxfooter trigger:disabled {
+    background: #f2f6f8;
+    background: -webkit-linear-gradient(to bottom,#f2f6f8 0,#e5e5e5 50%,#d3d3d3 51%,#f7f7f7 100%);
+    background: -o-linear-gradient(to bottom,#f2f6f8 0,#e5e5e5 50%,#d3d3d3 51%,#f7f7f7 100%);
+    background: linear-gradient(to bottom,#f2f6f8 0,#e5e5e5 50%,#d3d3d3 51%,#f7f7f7 100%)
+}
+
+overlayer {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.5);
+    z-index: 4
+}
